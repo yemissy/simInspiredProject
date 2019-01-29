@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+
+
+<html>
+
+<head>
+	<title>Landing</title>
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+
+
+</head>
+<header>
+	<div id="logo">
+	<a href="index.html">
+		<hr>
+			<img src="images/SSsimbi4.png" id="logo1">
+			<img src="images/inspired1.png" id="logo2">
+	</a>
+	</div>
+	<nav>
+		<ul id="mainUl">
+			<li class="outterList"><a href="" id="ul1" class="outterA" onmouseover="showSubnav()">Brand</a>
+				<ul id="innerUl" onmouseleave="hideSubNav()">
+				     <li class="innerli"><a href="pages/media.html">Media</a></li>
+					 <li class="innerli"><a href="pages/events.html">Events</a></li>
+					 <li class="innerli"><a href="pages/community.html">Community</a></li>
+					 <li class="innerli"><a href="pages/chosenGen.html">Chosen Generation</a></li>	
+				</ul>
+			</li>
+		    <li class="outterList"><a href="pages/About.html">About</a></li>
+		    <li class="outterList"><a href="pages/Thorns.html">Thorn</a></li>
+		    <li class="outterList"><a href="pages/videos.html">Videos</a></li>
+			<li class="outterList"><a href="pages/shop.html">Shop</a></li>
+	    </ul>         
+		<div id="navIcons">
+			<a href="#" class="nava" id="shopicon"><img src="images/goods.png"></a>
+			<a href="#"><input type="search" id="searchicon" name="searchBar" placeholder="search.." onclick="display()" onkeyup="doThis()" >
+				<ol id="SearchUl" >
+					   <li class="list3"><a href="pages/Thorns.html" class="keyWords">Gallery</a></li>
+					   <li class="list3"><a href="pages/videos.html" class="keyWords">Videos</a></li>
+						<li class="list3"><a href="pages/videos.html" class="keyWords">Vlogs</a></li>
+						<li class="list3"><a href="pages/videos.html" class="keyWords">Power</a></li>
+						<li class="list3"><a href="pages/videos.html" class="keyWords">Girls</a></li>
+						<li class="list3"><a href="pages/videos.html" class="keyWords">School</a></li>
+						<li class="list3"><a href="pages/videos.html" class="keyWords">Who</a></li>
+						<li class="list3"><a href="pages/videos.html" class="keyWords">Research</a></li>
+						<li class="list3"><a href="pages/Thorns.html" class="keyWords">City</a></li>
+						<li class="list3"><a href="pages/Thorns.html" class="keyWords">Form</a></li>
+						<li class="list3"><a href="pages/Thorns.html" class="keyWords">About</a></li>
+				</ol>
+			</a>
+		</div>
+	</nav>
+</header>
+<body id="Landing">
+	<div id="Modal" onload="popUpModal()" onclick="closeModal();">
+		<button type="button" id="close">&times;</button>
+		<h2>Let's Stay In Touch</h2>
+		<h4>Subscribe to our</h4>
+		<h1>NEWSLETTER</h1>
+		<h5>To be updated about the latest vlog post and events</h5>
+		<div id="InputJoin">
+			<input type="email" class="buttons" id="email" name="Email" placeholder="Your Email">
+			<input type="button" class="buttons" id="Join" name="Submit" value="Join" onclick="Submit()">
+
+		</div>
+	</div>
+	
+	<main>
+		<div id="blurrImg"></div>
+			<div id="vidTitle">
+	    		<h1>THORNS</h1>
+	    		<h3>A Sim Inspired Film</h3>
+	    		<!-- video source from youtube -->
+	    		<div id="frameDiv"><iframe width="700" height="400" src="https://www.youtube.com/embed/v7vc32MGz5g?autoplay= control=0"></iframe>
+	    		</div>
+	    	</div>
+	    <div id="castDiv">
+	    	<hr>
+	    	<h2 id=Head3>Featured Characters</h2>
+	    	<!-- images are screenshots of the casts in a video -->
+	    	<div id="casts" onmouseover="slideimgs()">
+		    	<div class="castChild"><img src="images/Destiny2.png"> </div>
+		    	<div class="castChild"><img src="images/Bikem1.png"></div>
+		    	<div class="castChild"><img src="images/Sabrina1.png"></div>
+		    	<div class="castChild"><img src="images/Ink1.png"></div>
+		    	<div class="castChild"><img src="images/Sherrif1.png"></div>
+		    	<div class="castChild"><img src="images/Dolapo1.png"></div>
+		    	<div class="castChild"><img src="images/Shanice1.png"></div>
+		    	<div class="castChild"><img src="images/Tanya1.png"></div>
+	   	 	</div>
+		<hr>
+		</div>
+		<div id="blurr2"></div>
+	    <div id="quoteContainer">
+	    	<div id="Quote">
+		    	<button id="previous"><a href="#" class="arrows">&lsaquo;</a></button>
+		        <button id="Next"><a href="#" class="arrows">&rsaquo;</a></button>
+		    </div>
+			<div id="quotep">
+		        <p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis, suscipit animi repellendus laudantium nobis fuga quisquam rem mollitia eveniet!Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		        consequat. Duis aute irure dolor<br>Simbi Akanni</p>
+		    </div>
+      	</div>
+	</main>
+	<footer>
+    <div id="footerDiv">
+	    <p class="footerP">Careers<br> Volunteers</p>
+	    <p class="footerP">Join the Mailing List<br>Partner With Us</p>
+	    <p class="footerP">Shop Our Products<br>Questions And Concerns</p>
+	    <p id="myInfo">unpublished work by <span id="logoSpan">TECHBETHEL</span>2018</p>
+	    <a href="https://www.instagram.com/sim_inspired/"><img src="images/instagram6.png"></a>
+        <a href="https://twitter.com/sim_inspired"><img src="images/twitter6.png"></a>
+        <a href="https://www.youtube.com/channel/UCFwhIoYfVwIj2OxUOj6-2Ew"><img src="images/youtube6.png"></a>
+    </div>
+	</footer>
+	<script type="text/javascript" src="script/main.js"></script>
+</body>
+
+</html>

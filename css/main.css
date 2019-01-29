@@ -1,0 +1,528 @@
+/**{
+    margin: 0px;
+    padding: 0px;
+}*/
+/*Page 1 styling. Landing Page with header and footer*/
+ /*Modal Styling*/
+ #Modal{
+    border: solid black;
+    width: 500px;
+    height: 500px;
+    text-align: center;
+    background-color: pink;
+    opacity: 0.8;
+    font-size: 20px;
+    display: none;
+
+ }
+ #close{
+    margin-left: 90%;
+    margin-top:0px;
+    color:pink;
+    width: 50px;
+    background-color: black;
+
+ }
+ #InputJoin{
+    background-color: pink;
+    opacity: 0.7;
+ }
+ .buttons{
+    height: 70px;
+ }
+ #email{
+    font-size: 18px;
+    border: solid black;
+    width: 300px;
+    float: left;
+    margin-left: 10px;
+ }
+ #Join{
+    font-size: 18px;
+/*    margin-left: 4px;*/
+    position: absolute;
+    width: 150px;
+    left:65%;
+    margin-top: 4px;
+    background-color: black;
+    color:pink;
+    border: solid black;
+ }
+ #Gender{
+    margin-left: 10px;
+ }
+
+
+ a{
+    text-decoration: none;
+}
+#logo{
+    /*width: 250px;
+    height: inherit;*/
+  /*  background-color: white;*/
+    margin-left: 24px;
+}
+header{
+
+}
+#logo hr{
+    position: absolute;
+    height: 50px; 
+    width: 2px;
+    background-color: #9864ad;
+    margin-top:1px;
+    margin-left:58px
+}
+#logo1{
+    margin-top:5px;
+}
+#logo2{
+    margin:8px;
+}
+nav{
+    display: flex;
+    background-color: black;
+    opacity: 0.8;
+}
+nav ul{
+    flex:1;
+    display: flex;
+    list-style: none;
+    margin-left: 23%;
+    
+}
+nav ul li {
+    flex:1;
+    text-align: left;
+}
+nav ul :hover{
+    background-color: black;
+    color:white;
+}
+ nav a:active{
+    border-bottom: 3px solid #c51770;
+}
+nav ul li a{
+    text-align: center;
+    display: flex;
+    text-decoration: none;
+    font-size: 25px;
+    color:#c51770;
+}
+nav ul li ul{
+    /*I noticed that when i commented out position absolite away, the "Brand" <a> element moved left*/
+    /*I also noticed if i dont have the part of the style my navigation pushes my main content down*/
+    /*The position absolute keeps it from pushing my content down*/
+    position: absolute;
+    /*Property left pretty much helps me to have my subnav position to the left since margin left wasn't working*/
+    left: 5px;
+    display: none;
+}
+/*nav ul li ul:hover{
+    background-color: black;
+}*/
+nav ul li ul a{
+    display: none;
+    display:block;
+    font-size: 15px;
+    text-align:left;
+    padding: 14px;
+}
+
+#shopicon{
+    margin-right: 20px; 
+}
+#SearchUl{
+    list-style: none;
+    border: solid blue;
+    display: inline-block;
+    position: absolute;
+    left:67%;
+    top:13%;
+    height: 90px;
+    overflow: scroll;
+    display: none;
+}
+#navIcons{
+    flex:1;
+    margin-top: 23px;
+    display: flex;
+}
+/*Styling main and Flexing cast images
+*/
+main{
+    background-size: cover;
+    margin: 80px;
+    margin-top: 150px;
+    text-align: center;
+}
+
+#blurrImg{
+    position: absolute;
+    background: url("../images/SkyRise4.jpg");
+    background-size:cover ;
+    width: 90%;
+    height: 500px;
+    filter:blur(2px);
+    z-index: -1;
+}
+#vidTitle{
+  /*  border: solid blue;*/
+    width: 700px;
+    height: 400px;
+    margin: 30px;
+    margin-left: 25%;
+    color:#c51770;
+}
+#castDiv{
+    background-size: cover;
+    height: 300px;
+    margin-top: 10%;
+    background-color:white;
+}
+#casts{
+    width: 70%;
+    height: 200px;
+    justify-content: center;
+    margin-left: 15%;
+    display: flex;
+    overflow: hidden;
+}
+.castChild{
+    display: block;
+    padding: 2px;
+}
+#Head3{
+    color:#c51770;
+    text-align: center;
+}
+
+#casts img{
+ /*   border: solid #e1bfe3;*/
+    border-radius: 100%;
+    margin-top:2px;
+    width: 180px;
+    height: 180px;
+    padding: 10px;
+}
+#casts img:hover{
+    opacity: 1;
+}
+#quoteContainer{
+    color:#c51770;
+    margin-top: 180px;
+    background-color:#000000;
+    opacity: 0.6;
+    width: 800px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin-left: 20%;
+}
+#blurr2{
+    margin-top:30px;
+    width: 90%;
+    height: 300px;
+    position:absolute;
+    background: url("../images/SkyRiseBottom1.jpg");
+    background-size: cover;
+    filter: blur(2px);
+    z-index: -1;
+}
+#Quote{
+    margin-left:0px;
+    flex:1;
+   display: flex;
+   margin-top:30px; 
+   width:50%;
+   height:100px;
+}
+#quotep{
+    position: absolute;
+    flex:1;
+    width: 300px;
+    margin-top: 15px;
+    margin-left: 10px;
+    text-align:left;
+    font-size: 18px;
+    overflow: scroll;
+    height: 130px;
+}
+
+#previous{
+    width: 40px;
+    height: 150px;
+    margin-top: -30px;
+    margin-left: 27%;
+}
+#Next{
+  /*  margin-left: 10%;*/
+   margin-top: -30px;
+   width:  40px;
+   height: 150px;
+
+}
+
+footer{
+    margin-top: 200px;
+    font-size: 20px;
+}
+#footerDiv{
+    background: #000000;
+    color:#c51770;
+    display: flex;
+    padding: 40px;
+
+}
+.footerP{
+    margin-top: 0px;
+    flex:1;
+}
+#myInfo{
+    position: absolute;
+    text-align: center;
+    font-size: 15px;
+    color:white;
+   /* padding: 10px;*/
+    margin-top: 69px;
+    margin-left: 30%;
+
+}
+#logoSpan{
+    color: #E8676B;
+    font-size: 30px;
+    font-family: Arial;
+    text-shadow: 0px 2px black;
+}
+/*About Page styling, page 2*/
+#missionBody{
+    margin:35px;
+    display: flex;
+/*    width: 100%;*/
+/*    height: 100%;*/
+
+}
+#mission{
+    width: 25%;
+/*    border: solid green;*/
+}
+#mission1{
+    height:500px;
+    margin-top: 50px;
+    overflow: scroll;
+/*    border: solid purple;*/
+}
+#mission2 img{
+    width: 100px;
+    padding: 5px;
+    height: 120px;
+    transition: 1s;
+}
+#mission2 img:hover{
+    width: 130px;
+    height: 150px;
+    flex-wrap: wrap;
+}
+#mission2{
+    margin:2px;
+    margin-top:20px;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: scroll;
+    height:550px;
+/*    border: solid blue;*/
+}
+#mission hr{
+
+}
+#SimTeam{
+    flex:2;
+/*    border: solid red;*/
+}
+.sim_inspired{
+    width: 90%;
+    height: 600px;
+    margin-left: 30px;
+}
+#Simbi{
+    height:400px;
+    overflow: scroll;
+}
+#Team{
+    margin-top:10px;
+}
+/*Floating my image left to allow me wrap an image around it.*/
+#Simbi img{
+    margin:10px;
+    float:left;
+    width: 230px;
+    height: 250px;
+}
+#Simbi h1{
+    text-align: center;
+}
+#Simbi p{
+    margin:10px;
+    font-size: 18px;
+}
+/*Team Div Styling*/
+#Team h2{
+    font-size: 20px;
+}
+#TeamPics{
+ /*   border: solid yellow;*/
+    display: flex;
+    margin-top: 15px;
+    justify-content: center;
+}
+#Team img{
+  /*  margin-left: 20px;*/
+    width: 200px;
+    height: 200px;
+}
+.TeamText{
+    text-align: left;
+}
+/*Video Page Styling...page 4*/
+#SimsAnime{
+    text-align: center;
+    margin-top: 10px;
+}
+#parentDiv{
+    margin-top:10px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+#LatestVlogs{
+    background-color: #c51770;
+    margin-top:40px;
+    width:15%;
+    height: 500px;
+    overflow: scroll;
+    padding: 15px;
+}
+ul{
+    list-style: none;
+}
+#VideoBody hr{
+    margin:10px;
+}
+#VideoDiv{
+    margin-left: 1px;
+    margin-right:50px;
+    flex:2;
+    height: 600px;
+    width: 60%;
+}
+#twitterDiv{
+    width: 24%;
+    height: 700px;
+    padding: 10px;
+}
+#vlogscontainer{
+    margin-top:100px;
+    margin-left: 60px;
+    width: 700px;
+    height: 400px;
+}
+button{
+    font-size: 30px;
+    width: 160px;
+    height: 60px;
+    margin-left: 40%;
+    margin-top: 50px;
+}
+/*Thorns Styling*/
+#Thorns{
+    display: flex;
+    width: 100%;
+    height: 800px;
+    margin-top:120px;
+}
+#flexT1{
+    background-color: black;
+    opacity: 0.8;
+    color: white;
+  /*  height: 600px;*/
+    width:500px;
+    overflow: scroll;
+
+}
+#flexT1:hover{
+    opacity: 1;
+
+}
+#flexT2{
+    background-color: black;
+    color: white;
+    opacity: 0.8;
+    width:900px;
+    display: flex;
+    flex-direction: column;
+}
+#flexT2:hover{
+    opacity: 1;
+}
+#ThornsPics{
+    overflow: scroll;
+    margin:10px;
+    margin-left: 30px;
+    height: 500px;
+    display: flex;
+    flex-wrap: wrap;
+}
+#ThornsPics img{
+    width: 200px;
+    height: 200px;
+}
+#ThornsVids{
+    width: 600px;
+    height: 400px;
+    margin-left: 70px;
+}
+#flexT3{
+    background-color: black;
+    opacity: 0.8;
+    color: white;
+    text-align: center;
+    list-style:none;
+    width: 500px;
+}
+#flexT3:hover{
+    opacity: 1
+}
+ul{
+    text-align: left;
+}
+.subHead{
+    text-align: left;
+    margin-left: 15px;
+}form{
+    width: 400px;
+    height: 250px;
+    background-color: pink;
+    color: black;
+    border: solid black;
+    margin-left: 10px;
+    text-align: left;
+    border-radius: 10px;
+    font-size: 18px;
+
+}
+form input{
+    height: 40px;
+}
+form img{
+    position: absolute;
+    top: 85%;
+    left: 87%;
+    width: 160px;
+    height: 160px;
+}
+form img:hover{
+    width: 200px;
+    height: 200px;
+}
